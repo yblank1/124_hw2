@@ -16,5 +16,5 @@ message IntArray {
 }
 
 message IntResponse {
-           int32 value = 1;
+           int64 value = 1;
 }

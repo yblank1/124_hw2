@@ -59,14 +59,13 @@ public class GlobeSortClient {
         long appTh_t1 = System.nanoTime(); 
 
         long appThroughput = appTh_t1 - appTh_t0;        
-        long sortTime = response.value;
+        long sortTime = response.getValue();
         long oneWayThr = sortTime / 2;
  
-        System.out.println("Application Throughput: " + (appTh_t1 - appTh_t2); 
+        System.out.println("Application Throughput: " + (appTh_t1 - appTh_t0)); 
         System.out.println("Sort Time: " +sortTime); 
-        System.out.println("Network 2-way throughput: " + (appThrouput -
-sortTime); 
-        System.out.println("Network 1-way throughput: " + oneWayThr; 
+        System.out.println("Network 2-way throughput: " + (appThroughput -sortTime)); 
+        System.out.println("Network 1-way throughput: " + oneWayThr); 
  
         System.out.println("Sorted array");
     }
